@@ -100,7 +100,7 @@ const ContactForm = () => {
             className={css.input}
             type="text"
             name="name"
-            placeholder="Inna"
+            placeholder="Ex. Katrina"
             pattern="^[a-zA-Zа-яА-Я]+(([' -][a-zA-Zа-яА-Я ])?[a-zA-Zа-яА-Я]*)*$"
             title="Name may contain only letters, apostrophe, dash and spaces. For example Adrian, Jacob Mercer, Charles de Batz de Castelmore d'Artagnan"
           />

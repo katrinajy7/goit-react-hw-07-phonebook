@@ -19,14 +19,14 @@
 
 import React from 'react';
 import { ToastContainer } from 'react-toastify';
-import 'react-toastify/dist/react-toastify.css';
+// import 'react-toastify/dist/react-toastify.css';
 import { useDispatch, useSelector } from 'react-redux';
 import { useEffect } from 'react';
 import ContactForm from './ContactForm/ContactForm';
 import Filter from './Filter/Filter';
 import { ContactList } from './ContactList/ContactList';
-import { selectIsLoading, selectError } from 'redux/selectors';
-import { fetchContacts } from 'redux/operations';
+import { selectIsLoading, selectError } from '../../src/redux/selectors';
+import { fetchContacts } from '../../src/redux/operations';
 import { ColorRing } from 'react-loader-spinner';
 
 document.title = 'Phonebook_redux';

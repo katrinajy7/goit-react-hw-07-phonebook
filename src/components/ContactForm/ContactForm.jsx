@@ -1,4 +1,4 @@
-import css from './contactForm.module.css';
+import css from '../../components/ContactForm/contactForm.module.css';
 import { useDispatch, useSelector } from 'react-redux';
 import { addContact } from '../../../src/redux/operations';
 import { getContacts } from '../../../src/redux/selectors';
@@ -80,15 +80,15 @@ const ContactForm = () => {
 
     if (
       contacts.find(
-        contact => contact.name.toLowerCase() === name.toLowerCase()
+        contacts => contacts.name.toLowerCase() === name.toLowerCase()
       )
     ) {
       return toast.warn(`${name} is alredy in contacts.`);
     }
 
-      dispatch(addContact({ name, phone }));
-      toast.success(`${name} is added to the contact list!`);
-      form.reset();
+     dispatch(addContact({ name, phone }));
+     toast.success(`${name} is added to the contact list!`);
+     form.reset();
 
   }
    

@@ -56,7 +56,7 @@ export const fetchContacts = createAsyncThunk(
 
 export const addContact = createAsyncThunk(
   'contacts/addContact',
-  async ({ name, phone }, { rejectWithValue }) => {
+  async ({ name, phone }, { rejectWithValue}) => {
     try {
       const response = await axios.post('/contacts', { name, phone });
       return response.data;
@@ -68,7 +68,7 @@ export const addContact = createAsyncThunk(
 
 export const deleteContact = createAsyncThunk(
   'contacts/deleteContact',
-  async (contactId, { rejectWithValue }) => {
+ async (contactId, { rejectWithValue }) => {
     try {
       const response = await axios.delete(`/contacts/${contactId}`);
       return response.data;

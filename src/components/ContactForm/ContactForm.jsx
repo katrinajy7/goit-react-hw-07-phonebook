@@ -128,7 +128,7 @@ import { toast } from 'react-toastify';
 
 // export default ContactForm;
 
-const ContactForm = () => {
+const ContactForm= () => {
   const dispatch = useDispatch();
   const contacts = useSelector(getContacts);
 
